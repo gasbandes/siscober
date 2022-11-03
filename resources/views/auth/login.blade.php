@@ -34,14 +34,22 @@ switch($nombre_dia)
 
 @endphp
   <div class="auth-wrapper auth-v3 ">
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> b75ec073 (integracion general)
     <div class="auth-content">
         <div class="card">
             <div class="row align-items-stretch ">
                 <div class="col-md-6 img-card-side">
                     <img src="{{ asset('assets/images/auth-img-3.jpg') }}" alt="" class="img-fluid">
                     <div class="img-card-side-content">
+<<<<<<< HEAD
+                       
+=======
 
+>>>>>>> b75ec073 (integracion general)
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -49,13 +57,35 @@ switch($nombre_dia)
                        <div>
                             <h5 class="text-primary">¡Bienvenidos!</h5>
                             <p class="text-muted">Ingresa tu usuario y contraseña para continuar.</p>
+<<<<<<< HEAD
+                        </div> 
+                        <form class="auth-login-form mt-2"
+                          method="POST" 
+=======
                         </div>
                         <form class="auth-login-form mt-2"
                           method="POST"
+>>>>>>> b75ec073 (integracion general)
                           action="{{ route('login') }}"
                           autocomplete="off">
                           @csrf
                           <div >
+<<<<<<< HEAD
+                               
+                                  <div class="">
+                                      <label for="username" class="form-label">Usuario</label>
+                                     <input 
+                                     type="text"
+                                     class="form-control
+                                      @error('username') is-invalid
+                                      @enderror" 
+                                      id="login-username" 
+                                      name="username" 
+                                      placeholder="Ingrese su usuario" 
+                                      aria-describedby="login-username" 
+                                      tabindex="1" 
+                                      autofocus 
+=======
 
                                   <div class="">
                                       <label for="username" class="form-label">Usuario</label>
@@ -70,6 +100,7 @@ switch($nombre_dia)
                                       aria-describedby="login-username"
                                       tabindex="1"
                                       autofocus
+>>>>>>> b75ec073 (integracion general)
                                       value="{{ old('username') }}" />
                                       @error('username')
                                         <span class="invalid-feedback" role="alert">
@@ -78,6 +109,24 @@ switch($nombre_dia)
                                       @enderror
                                     </div>
                                   </div>
+<<<<<<< HEAD
+          
+                                  <div class=" mt-2">
+                                     
+                                      <label for="password-input">Contraseña</label>
+                                      <div class="position-relative auth-pass-inputgroup mb-3">
+                                          <input 
+                                           type="password"
+                                           class="form-control
+                                            @error('password') is-invalid
+                                            @enderror" 
+                                            id="login-password" 
+                                            name="password" 
+                                            placeholder="Ingresa la contraseña" 
+                                            aria-describedby="login-password" 
+                                            tabindex="1" 
+                                            autofocus 
+=======
 
                                   <div class=" mt-2">
 
@@ -94,6 +143,7 @@ switch($nombre_dia)
                                             aria-describedby="login-password"
                                             tabindex="1"
                                             autofocus
+>>>>>>> b75ec073 (integracion general)
                                             value="{{ old('password') }}" />
                                             @error('password')
                                               <span class="invalid-feedback" role="alert">
@@ -102,8 +152,13 @@ switch($nombre_dia)
                                             @enderror
                                       </div>
                                   </div>
+<<<<<<< HEAD
+          
+                                 
+=======
 
 
+>>>>>>> b75ec073 (integracion general)
                                   <div class="mt-3">
                                       <div class="row">
                                         <div class="col-sm-12">
@@ -111,14 +166,24 @@ switch($nombre_dia)
                                         </div>
                                       </div>
                                   </div>
+<<<<<<< HEAD
+      
+                                  <div class="   text-center">
+                                     
+=======
 
                                   <div class="   text-center">
 
+>>>>>>> b75ec073 (integracion general)
 
                                       <div class="text-center mt-5 mb-4 ">
                                         <span id="weekDay" class="weekDay">
                                             {{ $nombre_dia }}
+<<<<<<< HEAD
+                                        </span>, 
+=======
                                         </span>,
+>>>>>>> b75ec073 (integracion general)
                                         <span id="day" class="day"></span> de
                                         <span id="month" class="month">
                                             {{ $mes_actual }}
@@ -133,6 +198,15 @@ switch($nombre_dia)
 
                                   </div>
 
+<<<<<<< HEAD
+                                  
+                              </form>
+
+                     
+                         </form>
+                    </div>
+                   
+=======
 
                               </form>
 
@@ -140,6 +214,7 @@ switch($nombre_dia)
                          </form>
                     </div>
 
+>>>>>>> b75ec073 (integracion general)
                 </div>
             </div>
         </div>
@@ -154,7 +229,11 @@ switch($nombre_dia)
             alert(1);
           @endif
      </script>
+<<<<<<< HEAD
+         
+=======
 
+>>>>>>> b75ec073 (integracion general)
 @endsection
 @section('styles')
     <!-- Sweet Alert css-->

@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 
 class TasaController extends Controller
 {
+<<<<<<< HEAD
+   
+=======
 
+>>>>>>> b75ec073 (integracion general)
 
     /**
      * Verificacion de la tasa
@@ -31,7 +35,11 @@ class TasaController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> b75ec073 (integracion general)
 
           $montog = $this->montoglobal();
 
@@ -40,7 +48,11 @@ class TasaController extends Controller
          $logs = new \App\Models\Log();
          $logs->fecha_registro = date('Y-m-d H').' ' . now()->isoFormat('H:mm:ss A');
          $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha ingresado a ver las tasas ingresadas al sistema,  a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
+<<<<<<< HEAD
+          $logs->usuario_id =\Auth::id(); 
+=======
           $logs->usuario_id =\Auth::id();
+>>>>>>> b75ec073 (integracion general)
           $logs->save();
 
         return view('admin.tasa.index');
@@ -73,7 +85,11 @@ class TasaController extends Controller
     {
         $tasa = new Tasa();
         $tasa->amount = $request->amount;
+<<<<<<< HEAD
+        $tasa->fecha_emision = $request->fecha_emision;
+=======
         $tasa->fecha_emision = date('d-m-Y');
+>>>>>>> b75ec073 (integracion general)
         $tasa->mes = \Carbon\Carbon::parse($request->fecha_emision)->format('m');
         $tasa->usuario_id = \Auth::id();
         $tasa->save();
@@ -81,7 +97,11 @@ class TasaController extends Controller
         $logs = new \App\Models\Log();
         $logs->fecha_registro = date('Y-m-d H').' ' . now()->isoFormat('H:mm:ss A');
         $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha cargado una nueva tasa al sistema por: '.$tasa->amount.',  a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
+<<<<<<< HEAD
+          $logs->usuario_id =\Auth::id(); 
+=======
           $logs->usuario_id =\Auth::id();
+>>>>>>> b75ec073 (integracion general)
           $logs->save();
 
          return json_encode(['success' => true]);
@@ -127,7 +147,11 @@ class TasaController extends Controller
         $logs = new \App\Models\Log();
         $logs->fecha_registro = date('Y-m-d H').' ' . now()->isoFormat('H:mm:ss A');
         $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha modificado la tasa en el sistema por: '.$tasa->amount.',  a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
+<<<<<<< HEAD
+          $logs->usuario_id =\Auth::id(); 
+=======
           $logs->usuario_id =\Auth::id();
+>>>>>>> b75ec073 (integracion general)
           $logs->save();
 
          return json_encode(['success' => true]);
@@ -146,12 +170,20 @@ class TasaController extends Controller
          $logs = new \App\Models\Log();
         $logs->fecha_registro = date('Y-m-d H').' ' . now()->isoFormat('H:mm:ss A');
         $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha eliminado la tasa: '.$tasa->amount.' en el sistema ,  a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
+<<<<<<< HEAD
+          $logs->usuario_id =\Auth::id(); 
+=======
           $logs->usuario_id =\Auth::id();
+>>>>>>> b75ec073 (integracion general)
           $logs->save();
 
         $tasa->delete();
         return json_encode(['success' => true]);
+<<<<<<< HEAD
+    }   
+=======
     }
+>>>>>>> b75ec073 (integracion general)
 
      public function bolivares()
     {
@@ -159,7 +191,12 @@ class TasaController extends Controller
 
         return $tbolivares;
     }
+<<<<<<< HEAD
+ 
+        
+=======
 
 
+>>>>>>> b75ec073 (integracion general)
 
 }

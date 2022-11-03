@@ -2,7 +2,11 @@
     <div class="vertical-menu">
 
         <div data-simplebar class="h-100">
+<<<<<<< HEAD
+ 
+=======
 
+>>>>>>> b75ec073 (integracion general)
             <!--- Sidemenu -->
             <div id="sidebar-menu">
                 <!-- Left Menu Start -->
@@ -28,7 +32,11 @@
                                 <a href="javascript: void(0);" class="has-arrow">Usuarios</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('usuarios') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
@@ -37,7 +45,11 @@
                                 <a href="javascript: void(0);" class="has-arrow">Roles</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('roles') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                    <li><a href="{{ url('roles/create') }}">Nuevo Role</a></li> 
+=======
                                     <li><a href="{{ url('roles/create') }}">Nuevo Role</a></li>
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
@@ -46,16 +58,28 @@
                                 <a href="javascript: void(0);" class="has-arrow">Permisos</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('permission') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+                                </ul>
+                            </li>
+                            @endcan
+                             @can('Ver Gerencias')
+=======
 
                                 </ul>
                             </li>
                             @endcan
                              @can('Ver Gerencia')
+>>>>>>> b75ec073 (integracion general)
                              <li>
                                 <a href="javascript: void(0);" class="has-arrow">Gerencias</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('gerencia') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
@@ -64,7 +88,11 @@
                                 <a href="javascript: void(0);" class="has-arrow">Historial de montos</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('historialmontos') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
@@ -73,7 +101,11 @@
                                 <a href="javascript: void(0);" class="has-arrow">Logs del sistema</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('logs') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
@@ -82,11 +114,19 @@
                                 <a href="javascript: void(0);" class="has-arrow">Historial de logueo</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('logins') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+                                </ul>
+                            </li>
+                            @endcan
+                            
+=======
 
                                 </ul>
                             </li>
                             @endcan
 
+>>>>>>> b75ec073 (integracion general)
                         </ul>
                     </li>
                     @endcan
@@ -102,8 +142,13 @@
                                 <a href="javascript: void(0);" class="has-arrow">Monto global</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('montoglobal') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+                                   
+=======
 
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
@@ -112,15 +157,24 @@
                                 <a href="javascript: void(0);" class="has-arrow">Tasa del dólar</a>
                                 <ul class="sub-menu" >
                                     <li><a href="{{ url('tasa') }}">Ver datos</a></li>
+<<<<<<< HEAD
+                                   
+                                   
+=======
 
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @endcan
                            @can('Ver Titulares')
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow">Titulares</a>
+<<<<<<< HEAD
+                                <ul class="sub-menu" > 
+=======
                                 <ul class="sub-menu" >
+>>>>>>> b75ec073 (integracion general)
                                     @can('Ver Titulares')
                                     <li><a href="{{ url('personal') }}">Ver datos</a></li>
                                     @endcan
@@ -139,7 +193,11 @@
                                     @can('Registrar Beneficiario')
                                     <li><a href="{{ url('beneficiario/create') }}">Registro de datos</a></li>
                                     @endcan
+<<<<<<< HEAD
+                                   
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             @can('Ver Proveedores')
@@ -161,7 +219,11 @@
                                     @can('Registrar Factura')
                                     <li><a href="{{ url('facturas/create') }}">Registro de datos</a></li>
                                     @endcan
+<<<<<<< HEAD
+                                   
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 </ul>
                             </li>
                             <li>
@@ -173,10 +235,17 @@
                                     @can('Registrar Reembolso')
                                     <li><a href="{{ url('reembolsos/create') }}">Registro de datos</a></li>
                                     @endcan
+<<<<<<< HEAD
+                                   
+                                </ul>
+                            </li>
+                            
+=======
 
                                 </ul>
                             </li>
 
+>>>>>>> b75ec073 (integracion general)
                         </ul>
                     </li>
 

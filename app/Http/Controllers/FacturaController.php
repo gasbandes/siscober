@@ -83,7 +83,11 @@ class FacturaController extends Controller
           $logs->usuario_id =\Auth::id();
           $logs->save();
 
+<<<<<<< HEAD
+        $tasa = /*$this->bolivares()*/ 1;
+=======
         $tasa = $this->bolivares();
+>>>>>>> b75ec073 (integracion general)
         if ($tasa == 0) {
              \Alert::info('¡Anuncio!', 'Ingresa la tasa del día.');
              return redirect()->to('tasa');

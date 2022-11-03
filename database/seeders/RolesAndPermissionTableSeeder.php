@@ -19,23 +19,40 @@ class RolesAndPermissionTableSeeder extends Seeder
         */
         $this->permissions =  [
 
+<<<<<<< HEAD
+                              
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 /* Usuarios */
                                 'Ver Usuario',
                                 'Registrar Usuario',
                                 'Editar Usuario',
                                 'Eliminar Usuario',
+<<<<<<< HEAD
+                                
+                                
+                                /* Asignar permisos */
+                                'Asignar Permisos',                              
+                               
+                               
+=======
 
 
                                 /* Asignar permisos */
                                 'Asignar Permisos',
 
 
+>>>>>>> b75ec073 (integracion general)
                                 'Ver Permisos',
                                 'Crear Permisos',
                                 'Editar Permisos',
                                 'Eliminar Permisos',
+<<<<<<< HEAD
+                                
+=======
 
+>>>>>>> b75ec073 (integracion general)
                                 /* Logins */
                                 'Ver Logins',
                                 'Ver LogSistema',
@@ -90,10 +107,17 @@ class RolesAndPermissionTableSeeder extends Seeder
                                 'Eliminar Proveedores',
 
                                 /* Gerencias */
+<<<<<<< HEAD
+                                'Ver Gerencias',
+                                'Registrar Gerencias',
+                                'Editar Gerencias',
+                                'Eliminar Gerencias',
+=======
                                 'Ver Gerencia',
                                 'Registrar Gerencia',
                                 'Editar Gerencia',
                                 'Eliminar Gerencia',
+>>>>>>> b75ec073 (integracion general)
 
 
                                 /* Historial Montos */
@@ -115,12 +139,20 @@ class RolesAndPermissionTableSeeder extends Seeder
                                 'Eliminar Monto Global',
 
 
+<<<<<<< HEAD
+                               
+=======
+>>>>>>> b75ec073 (integracion general)
 
 
 
 
+<<<<<<< HEAD
+                               
+=======
 
 
+>>>>>>> b75ec073 (integracion general)
 
 
                               ];
@@ -131,9 +163,15 @@ class RolesAndPermissionTableSeeder extends Seeder
         role admin we will assign all the permissions
         */
         $this->user_permissions = [
+<<<<<<< HEAD
+                                    
+                                    'Ver Beneficiario',
+                                    
+=======
 
                                     'Ver Beneficiario',
 
+>>>>>>> b75ec073 (integracion general)
                                     'Registrar Beneficiario',
                                     'Editar Beneficiario',
 
@@ -150,7 +188,11 @@ class RolesAndPermissionTableSeeder extends Seeder
                                     //'Eliminar Reembolso',
 
                              ];
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> b75ec073 (integracion general)
     }
 
 
@@ -185,7 +227,11 @@ class RolesAndPermissionTableSeeder extends Seeder
 	        $role = Role::create(['name' => 'Usuario']);
 	        $role->givePermissionTo($this->user_permissions);
 
+<<<<<<< HEAD
+	        
+=======
 
+>>>>>>> b75ec073 (integracion general)
 
 
     }

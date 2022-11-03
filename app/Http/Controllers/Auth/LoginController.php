@@ -44,12 +44,15 @@ class LoginController extends Controller
     }
 
 
+<<<<<<< HEAD
+=======
 
     public function username()
 
     {
         return 'username';
     }
+>>>>>>> b75ec073 (integracion general)
      public function login(Request $request)
     {
          $this->validateLogin($request);
@@ -62,7 +65,11 @@ class LoginController extends Controller
             $logs = new Log();
             $logs->fecha_registro = date('Y-m-d H').' ' . now()->isoFormat('H:mm:ss A');
             $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha iniciado sesión '. 'a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
+<<<<<<< HEAD
+            $logs->usuario_id =\Auth::id(); 
+=======
             $logs->usuario_id =\Auth::id();
+>>>>>>> b75ec073 (integracion general)
             $logs->save();
 
 
@@ -72,7 +79,11 @@ class LoginController extends Controller
          Alert::error('¡Algo salió mal!', 'Los datos ingresados no son los correctos.');
         return back();
 
+<<<<<<< HEAD
+    } 
+=======
     }
+>>>>>>> b75ec073 (integracion general)
 
 
      /**
@@ -87,9 +98,15 @@ class LoginController extends Controller
         $logs = new Log();
             $logs->fecha_registro = date('Y-m-d H').' ' . now()->isoFormat('H:mm:ss A');
             $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha cerrado sesión '. 'a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
+<<<<<<< HEAD
+            $logs->usuario_id =\Auth::id(); 
+            $logs->save();
+        
+=======
             $logs->usuario_id =\Auth::id();
             $logs->save();
 
+>>>>>>> b75ec073 (integracion general)
         $this->guard()->logout();
 
         $request->session()->invalidate();
@@ -101,7 +118,11 @@ class LoginController extends Controller
         }
 
 
+<<<<<<< HEAD
+            
+=======
 
+>>>>>>> b75ec073 (integracion general)
         Alert::success('¡Bien hecho!', 'Ha cerrado sesión satisfactoriamente.');
         return  redirect('/login');
     }
