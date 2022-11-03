@@ -6,7 +6,6 @@
 @php
 $mytime = Carbon\Carbon::now('America/Caracas');
 $fecha=$mytime->format('Y-m-d');
-
 $today = getdate();
 $data_month = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 //$config = \DB::table('configuraciones')->first();
@@ -14,7 +13,6 @@ $current_month = $today['mon'];
 $current_year = $today['year'];
 $mes_actual =$data_month[$current_month - 1];
 //dd($mes_actual);
-
 $nombre_dia = date('w');
 switch($nombre_dia)
 {
@@ -31,7 +29,6 @@ switch($nombre_dia)
     case 6: $nombre_dia="Sabado";
     break;
 }
-
 @endphp
   <div class="auth-wrapper auth-v3 ">
 
@@ -52,9 +49,6 @@ switch($nombre_dia)
                         </div>
                         <form class="auth-login-form mt-2"
                           method="POST"
-                        </div>
-                        <form class="auth-login-form mt-2"
-                          method="POST"
                           action="{{ route('login') }}"
                           autocomplete="off">
                           @csrf
@@ -72,7 +66,14 @@ switch($nombre_dia)
                                       placeholder="Ingrese su usuario"
                                       aria-describedby="login-username"
                                       tabindex="1"
-                                      autofocus>
+                                      autofocus
+                                      value="{{ old('username') }}" />
+                                      @error('username')
+                                        <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                        </span>
+                                      @enderror
+                                    </div>
                                   </div>
 
                                   <div class=" mt-2">
@@ -89,12 +90,15 @@ switch($nombre_dia)
                                             placeholder="Ingresa la contraseña"
                                             aria-describedby="login-password"
                                             tabindex="1"
-                                            autofocus>
-
-
+                                            autofocus
+                                            value="{{ old('password') }}" />
+                                            @error('password')
+                                              <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                              </span>
+                                            @enderror
+                                      </div>
                                   </div>
-
-
 
 
                                   <div class="mt-3">
@@ -108,13 +112,9 @@ switch($nombre_dia)
                                   <div class="   text-center">
 
 
-                                  <div class="   text-center">
-
-
                                       <div class="text-center mt-5 mb-4 ">
                                         <span id="weekDay" class="weekDay">
                                             {{ $nombre_dia }}
-                                        </span>,
                                         </span>,
                                         <span id="day" class="day"></span> de
                                         <span id="month" class="month">
@@ -129,13 +129,6 @@ switch($nombre_dia)
                                       </div>
 
                                   </div>
-
-
-                              </form>
-
-
-                         </form>
-                    </div>
 
 
                               </form>
