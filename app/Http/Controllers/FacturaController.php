@@ -82,12 +82,8 @@ class FacturaController extends Controller
          $logs->name = 'El usuario '.\Auth::user()->name.' '. \Auth::user()->last_name.' Ha ingresado para crear nueva factura en el sistema,  a las '.now()->isoFormat('H:mm:ss A'). ' del día '. date('d-m-Y');
           $logs->usuario_id =\Auth::id();
           $logs->save();
+          $tasa = $this->bolivares();
 
-<<<<<<< HEAD
-        $tasa = /*$this->bolivares()*/ 1;
-=======
-        $tasa = $this->bolivares();
->>>>>>> b75ec073 (integracion general)
         if ($tasa == 0) {
              \Alert::info('¡Anuncio!', 'Ingresa la tasa del día.');
              return redirect()->to('tasa');
